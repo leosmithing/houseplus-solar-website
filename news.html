@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News & Updates | HousePlus Solar Series</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#F97316"/>
+            <path d="M20 6L34 14V26L20 34L6 26V14L20 6Z" fill="white" opacity="0.9"/>
+            <path d="M20 12L28 17V23L20 28L12 23V17L20 12Z" fill="#F97316"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-house">House</span><span class="logo-plus">Plus</span>
+          <span class="logo-sub">Solar Series</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="news.html" class="active">News</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#contact" class="nav-cta">Get Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== NEWS HERO SECTION ===== -->
+  <section class="news-hero">
+    <div class="news-hero-content">
+      <div class="section-tag">Latest Updates</div>
+      <h1 class="news-hero-title">Industry News & HousePlus Updates</h1>
+      <p class="news-hero-desc">Stay informed about the latest developments in solar energy technology, market trends, and HousePlus innovations.</p>
+      <div class="news-filters">
+        <button class="filter-btn active" data-filter="all">All News</button>
+        <button class="filter-btn" data-filter="company">Company News</button>
+        <button class="filter-btn" data-filter="industry">Industry Trends</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWS GRID ===== -->
+  <section class="news-section">
+    <div class="container">
+      <div class="news-grid" id="newsGrid">
+        
+        <!-- News Item 1 -->
+        <article class="news-card" data-category="company">
+          <div class="news-image">
+            <img src="assets/hero-banner.jpg" alt="HousePlus at Solar Expo 2026" />
+            <span class="news-badge">Company News</span>
+            <span class="news-date">March 2026</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">HousePlus Showcases Latest Solar Solutions at International Solar Expo 2026</h3>
+            <p class="news-excerpt">HousePlus Group Factory participated in the prestigious International Solar Expo 2026, presenting cutting-edge solar inverters, lithium batteries, and charge controllers to over 500 international distributors and retailers.</p>
+            <div class="news-meta">
+              <span class="news-author">By HousePlus Team</span>
+              <span class="news-read-time">5 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 2 -->
+        <article class="news-card" data-category="industry">
+          <div class="news-image">
+            <img src="assets/solar-panel.jpg" alt="Global Solar Market Growth" />
+            <span class="news-badge">Industry Trends</span>
+            <span class="news-date">March 2026</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Global Solar Energy Market Reaches $200 Billion Milestone</h3>
+            <p class="news-excerpt">According to recent market research, the global solar energy market has surpassed $200 billion in 2026, driven by increasing demand for renewable energy solutions across Africa, Asia, and Europe.</p>
+            <div class="news-meta">
+              <span class="news-author">Market Analysis</span>
+              <span class="news-read-time">7 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 3 -->
+        <article class="news-card" data-category="technology">
+          <div class="news-image">
+            <img src="assets/lithium-battery.jpg" alt="Next-Gen Lithium Battery Technology" />
+            <span class="news-badge">Technology</span>
+            <span class="news-date">February 2026</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Breakthrough in Lithium Battery Technology: 50% Higher Energy Density</h3>
+            <p class="news-excerpt">New lithium iron phosphate (LiFePO4) battery technology achieves 50% higher energy density while maintaining superior thermal stability and safety. HousePlus is integrating this technology into next-generation products.</p>
+            <div class="news-meta">
+              <span class="news-author">Tech Innovation</span>
+              <span class="news-read-time">6 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 4 -->
+        <article class="news-card" data-category="company">
+          <div class="news-image">
+            <img src="assets/solar-inverter.jpg" alt="New MPPT Controller Launch" />
+            <span class="news-badge">Company News</span>
+            <span class="news-date">February 2026</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">HousePlus Launches Advanced MPPT Solar Charge Controller with AI Optimization</h3>
+            <p class="news-excerpt">The new HP-MPPT-AI series features artificial intelligence-driven maximum power point tracking, delivering up to 98% efficiency and real-time system monitoring via mobile app.</p>
+            <div class="news-meta">
+              <span class="news-author">Product Launch</span>
+              <span class="news-read-time">4 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 5 -->
+        <article class="news-card" data-category="industry">
+          <div class="news-image">
+            <img src="assets/solar-controller.jpg" alt="Africa Solar Initiative" />
+            <span class="news-badge">Industry Trends</span>
+            <span class="news-date">January 2026</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Africa's Solar Energy Capacity Doubles: Opportunities for Off-Grid Solutions</h3>
+            <p class="news-excerpt">Sub-Saharan Africa's installed solar capacity has doubled to 15 GW, creating unprecedented demand for reliable off-grid solar systems. HousePlus is expanding operations to serve this growing market.</p>
+            <div class="news-meta">
+              <span class="news-author">Market Report</span>
+              <span class="news-read-time">8 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 6 -->
+        <article class="news-card" data-category="technology">
+          <div class="news-image">
+            <img src="assets/power-station.jpg" alt="Solar Power Station Technology" />
+            <span class="news-badge">Technology</span>
+            <span class="news-date">January 2026</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Portable Solar Power Stations: The Future of Mobile Energy</h3>
+            <p class="news-excerpt">Portable solar power stations are revolutionizing emergency response, outdoor activities, and remote work. Learn how HousePlus portable solutions combine solar panels, batteries, and inverters in one compact unit.</p>
+            <div class="news-meta">
+              <span class="news-author">Technology Guide</span>
+              <span class="news-read-time">6 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 7 -->
+        <article class="news-card" data-category="company">
+          <div class="news-image">
+            <img src="assets/solar-street-light.jpg" alt="Smart Street Lighting Solution" />
+            <span class="news-badge">Company News</span>
+            <span class="news-date">December 2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">HousePlus Smart Solar Street Lights Illuminate 50 Villages in Nigeria</h3>
+            <p class="news-excerpt">A successful deployment of 500 HousePlus solar LED street lights has brought reliable lighting to 50 remote villages in Nigeria, improving safety and enabling evening economic activities.</p>
+            <div class="news-meta">
+              <span class="news-author">Project Case Study</span>
+              <span class="news-read-time">5 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 8 -->
+        <article class="news-card" data-category="industry">
+          <div class="news-image">
+            <img src="assets/about-bg.jpg" alt="Global Supply Chain" />
+            <span class="news-badge">Industry Trends</span>
+            <span class="news-date">December 2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Solar Industry Supply Chain Stabilizes: Prices Expected to Drop 15%</h3>
+            <p class="news-excerpt">Global semiconductor supply chain improvements and increased manufacturing capacity are expected to reduce solar component prices by 15% in 2026, making solar energy more accessible worldwide.</p>
+            <div class="news-meta">
+              <span class="news-author">Industry Analysis</span>
+              <span class="news-read-time">7 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+        <!-- News Item 9 -->
+        <article class="news-card" data-category="technology">
+          <div class="news-image">
+            <img src="assets/hero-banner.jpg" alt="Solar System Maintenance" />
+            <span class="news-badge">Technology</span>
+            <span class="news-date">November 2025</span>
+          </div>
+          <div class="news-content">
+            <h3 class="news-title">Complete Guide: How to Maintain Your Solar Energy System for Maximum Efficiency</h3>
+            <p class="news-excerpt">Regular maintenance is key to ensuring your solar system operates at peak efficiency. Discover essential maintenance tips, cleaning schedules, and when to seek professional service.</p>
+            <div class="news-meta">
+              <span class="news-author">Technical Guide</span>
+              <span class="news-read-time">8 min read</span>
+            </div>
+            <a href="#" class="read-more">Read Full Article →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more-container">
+        <button class="btn-load-more">Load More Articles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER SECTION ===== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Stay Updated with HousePlus News</h2>
+        <p>Subscribe to our newsletter to receive the latest solar industry insights and HousePlus product updates.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+        <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="#F97316"/>
+                <path d="M20 6L34 14V26L20 34L6 26V14L20 6Z" fill="white" opacity="0.9"/>
+                <path d="M20 12L28 17V23L20 28L12 23V17L20 12Z" fill="#F97316"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-house">House</span><span class="logo-plus">Plus</span>
+              <span class="logo-sub">Solar Series</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Professional Solar Energy Solutions — Powering Homes, Businesses & Communities Worldwide.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Solar Products</h5>
+          <ul>
+            <li><a href="index.html#products">Solar Inverters</a></li>
+            <li><a href="index.html#products">Lithium Batteries</a></li>
+            <li><a href="index.html#products">MPPT Controllers</a></li>
+            <li><a href="index.html#products">PWM Controllers</a></li>
+            <li><a href="index.html#products">Solar Panels</a></li>
+            <li><a href="index.html#products">Power Stations</a></li>
+            <li><a href="index.html#products">Solar Lights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="index.html#about">About HousePlus</a></li>
+            <li><a href="index.html#features">Why Choose Us</a></li>
+            <li><a href="news.html">News & Updates</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+            <li><a href="https://houseplus.com.ng" target="_blank">Official Website</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+              +86 155 7811 9543
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              jack@houseplus-ch.com
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              www.houseplus-ch.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HousePlus Group Factory. All rights reserved. | Professional Solar Energy Solutions Provider</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="news-script.js"></script>
+</body>
+</html>
