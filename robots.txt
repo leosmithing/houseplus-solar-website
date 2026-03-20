@@ -1,0 +1,48 @@
+# HousePlus Solar Series - robots.txt
+# This file guides search engine crawlers and AI bots
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /news.html
+Allow: /assets/
+Allow: /sitemap.xml
+
+# Disallow admin and private directories (if any)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Crawl delay (in seconds) - be nice to servers
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# AI Search Engines
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemap location
+Sitemap: https://leosmithing.github.io/houseplus-solar-website/sitemap.xml
