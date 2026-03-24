@@ -64,4 +64,4 @@ Disallow: /*?*page=2
 Disallow: /*?*page=3
 
 # Sitemap location
-Sitemap: https://houseplus.ng/sitemap.xml
+Sitemap: https://www.houseplus.ng/sitemap.xml
