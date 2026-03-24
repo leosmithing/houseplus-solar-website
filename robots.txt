@@ -44,5 +44,24 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+# Block known bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Disallow duplicate/parameter-based URLs
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /*?*page=2
+Disallow: /*?*page=3
+
 # Sitemap location
-Sitemap: https://leosmithing.github.io/houseplus-solar-website/sitemap.xml
+Sitemap: https://houseplus.ng/sitemap.xml

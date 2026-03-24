@@ -1061,3 +1061,153 @@ ul { list-style: none; }
   .news-excerpt { font-size: 13px; }
   .newsletter-content h2 { font-size: 24px; }
 }
+
+
+/* ===== BREADCRUMB NAVIGATION ===== */
+.breadcrumb-wrapper {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 12px 0;
+  margin-top: 70px;
+}
+
+.breadcrumb-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.breadcrumb-item a {
+  color: var(--orange);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--orange-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.breadcrumb-item .separator {
+  color: #cbd5e1;
+  margin: 0 4px;
+}
+
+/* ===== LAZY LOADING IMAGES ===== */
+img[loading="lazy"] {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+img.lazy-loaded {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+img.lazy-error {
+  background: #f0f0f0;
+  opacity: 0.5;
+}
+
+/* ===== PERFORMANCE OPTIMIZATIONS ===== */
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Improve font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Optimize images for performance */
+img {
+  will-change: transform;
+  contain: layout style paint;
+}
+
+/* Optimize animations */
+@supports (will-change: transform) {
+  .hero, .product-card, .fade-in {
+    will-change: transform, opacity;
+  }
+}
+
+/* ===== RESPONSIVE BREADCRUMBS ===== */
+@media (max-width: 768px) {
+  .breadcrumb-wrapper {
+    padding: 10px 0;
+  }
+
+  .breadcrumb-item {
+    font-size: 12px;
+  }
+
+  .breadcrumb-item .separator {
+    margin: 0 2px;
+  }
+
+  .breadcrumb-list {
+    gap: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumb-wrapper {
+    display: none;
+  }
+}
+
+/* ===== PRINT STYLES (Performance Optimization) ===== */
+@media print {
+  .navbar, .footer, .breadcrumb-wrapper, .btn, form {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
